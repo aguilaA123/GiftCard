@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WolfStream – Gift Card</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="used-code" id="usedCode"></div>
+
+  <div class="card">
+    <img src="../img/logo.png" class="logo" />
+
+    <!-- Texto principal dinámico -->
+    <h2 id="mainTitle">Cuenta en Progreso</h2>
+    <p class="subtitle" id="mainSubtitle">
+      Su cuenta aún se está generando. Puede recibir notificaciones rápidas por correo.
+    </p>
+
+    <!-- Botón y formulario correo -->
+    <div id="emailContainer">
+      <button id="receiveEmailBtn">Recibir por correo</button>
+      <div id="emailForm" class="hidden">
+        <input type="email" id="emailInput" placeholder="Tu correo">
+        <button id="emailSubmit">Listo</button>
+      </div>
+    </div>
+
+    <!-- Información de la cuenta -->
+    <div class="info">
+      <div><span>Correo:</span><span id="correo">—</span></div>
+      <div><span>Contraseña:</span><span id="password">—</span></div>
+      <div><span>Perfil:</span><span id="perfil">—</span></div>
+      <div><span>PIN:</span><span id="pin">—</span></div>
+      <div><span>Inicio:</span><span id="inicio">00/00/00</span></div>
+      <div id="estadoDiv"><span>Estado:</span><span id="estadoText">—</span></div>
+    </div>
+
+    <!-- Soporte técnico -->
+    <div class="support">
+      <p>Problemas o dudas? <strong>WhatsApp:</strong> +00 000000000 <br><strong>Email:</strong> wolf.streaming22.@gmail.com</p>
+    </div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
