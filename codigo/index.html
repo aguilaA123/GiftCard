@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WolfStream - Código de Acceso</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="background-overlay"></div>
+
+  <main class="main-container">
+    <section class="card">
+      <div class="logo-wrapper">
+        <img src="../img/logo.png" alt="Logo WolfStream" class="logo">
+      </div>
+
+      <h1 class="title">WolfStream</h1>
+      <p class="subtitle">Por favor ingresa el código único de tu Gift Card</p>
+
+      <form class="code-form">
+        <input 
+          type="text" 
+          id="accessCode"
+          maxlength="11"
+          placeholder="0 0 0 0 - 0 0 0 0"
+          class="code-input"
+          inputmode="numeric"
+        >
+        <button class="btn-entrar">Verificar</button>
+      </form>
+
+      <!-- MENSAJE FLASH -->
+      <div id="flashMessage" class="flash-message"></div>
+    </section>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
